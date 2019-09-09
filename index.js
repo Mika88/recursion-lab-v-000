@@ -58,7 +58,7 @@ function includesNumber(array, number) {
       return true
     } else {
       array.shift()
-      includesNumber(array, number)
+      return includesNumber(array, number)
     }
   }
 }
