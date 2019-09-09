@@ -55,6 +55,6 @@ function includesNumber(array, number) {
     return true
   } else {
     let lastItem = array.pop()
-    includesNumber(array, number) && lastItem === number
+    return includesNumber(array, number) && lastItem === number
   }
 }
