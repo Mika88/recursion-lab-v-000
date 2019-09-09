@@ -49,3 +49,12 @@ function maxOf(array) {
      }
    }
 }
+
+function includeNumber(array, number) {
+  if (array.length === 1 && array[0] === number) {
+    return true
+  } else {
+    let lastItem = array.pop()
+    includeNumber(array, number) && lastItem === number
+  }
+}
