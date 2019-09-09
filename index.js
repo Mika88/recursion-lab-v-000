@@ -54,8 +54,14 @@ function includesNumber(array, number) {
   if (array.length === 1 && array[0] === number) {
     return true
   } else {
-    array.shift()
-    array[0] === number
+    if (array[0] === number){
+      return true
+    } else {
+      array.shift()
+      includesNumber(array, number)
+    }
+  
+    
     includesNumber(array, number)
   }
 }
