@@ -56,6 +56,6 @@ function includesNumber(array, number) {
   } else {
     array.shift()
     array[0] === number
-    includesNumber(array, number) 
+    includesNumber(array, number)
   }
 }
