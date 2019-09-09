@@ -61,4 +61,5 @@ function includesNumber(array, number) {
       return includesNumber(array, number)
     }
   }
+  return false
 }
