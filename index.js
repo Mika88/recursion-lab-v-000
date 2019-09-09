@@ -60,8 +60,8 @@ function includesNumber(array, number) {
       array.shift()
       includesNumber(array, number)
     }
-  
-    
+
+
     includesNumber(array, number)
   }
 }
